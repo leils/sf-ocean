@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Depth of the Ocean</title>
+  <title>How Deep is the Ocean?</title>
   <style>
      body {
       max-width: 640px;
@@ -34,10 +34,26 @@
       font-size: 1.2em;
       line-height: 1.6;
     }
+    .google-maps {
+      position: relative;
+      padding-bottom: 75%; 
+      height: 0;
+      overflow: hidden;
+    }
+
+    .google-maps iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+</style>
   </style>
 </head>
 <body>
-  <h1>The Depth of the Ocean</h1>
+  <h1>How Deep is the Ocean?</h1>
   <hr>
   <h2>San Francisco is as wide as the ocean is deep.</h2>
   <p>
@@ -58,7 +74,9 @@
         <li>Elephant Seals could dive all the way to 7th St.</li>
     </ul>
   </p>
-  <iframe src="https://www.google.com/maps/d/embed?mid=1YLA_iEw8cYLh7VdYtB9VBjO-Dud5CcM&ehbc=2E312F&noprof=1" width="640" height="480"></iframe></body>
+  <div class="google-maps">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1YLA_iEw8cYLh7VdYtB9VBjO-Dud5CcM&ehbc=2E312F&noprof=1" width="640" height="480"></iframe></body>
+  </div>
   <p>
   <hr>
   <h2>So how do I take this tour?</h2>
@@ -74,14 +92,16 @@
   <hr>
 
   <p>Made by <a href="https://leiac.me">Leia</a></p>
-  <details>
+  <p>Want to hear updates about this project? <a href="https://howdeepistheocean.substack.com/">Sign up for the mailing list!</a></p>
+
+  <!-- <details>
     <summary>This site is a work in progress! Ideas for things to come: </summary> 
     <ul>
       <li>More sites! There's a lot of ocean out there.</li>
       <li>List of all landmark/seamarks, including SF location and descriptions.</li>
       <li>GPS-based audio or video experience.</li>
     </ul>
-  </details>
+  </details> -->
 
 
 </html>
